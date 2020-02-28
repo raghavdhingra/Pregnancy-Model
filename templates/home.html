@@ -12,47 +12,37 @@
 
 {% block content %}
 <div class="container">
+    <div style="height: 2em;"></div>
     <form method="POST" action="{% url 'pregnancyApi' %}">
+        {% csrf_token %}
         <div class="main-grid">
             <div class="form-group">
-                <label>Email address</label>
-                <input type="text" id="" class="form-control" placeholder="">
+                <label>Number of Pregnancy</label>
+                <input type="number" id="" class="form-control" placeholder="Number of Pregnancy">
             </div>
             <div class="form-group">
-                <label>Password</label>
-                <input type="text" class="form-control" id="" placeholder="">
+                <label>Glucose Concentration</label>
+                <input type="number" class="form-control" id="" placeholder="Your Glucose Concentration">
             </div>
             <div class="form-group">
-                <label>Email address</label>
-                <input type="text" id="" class="form-control" placeholder="Enter email">
+                <label>Diastolic Blood Pressure</label>
+                <input type="number" id="" class="form-control" placeholder="Blood Pressure">
             </div>
             <div class="form-group">
-                <label>Password</label>
-                <input type="text" class="form-control" id="" placeholder="">
+                <label>Thickness of Triceps</label>
+                <input type="number" class="form-control" id="" placeholder="Thickness">
             </div>
             <div class="form-group">
-                <label>Email address</label>
-                <input type="text" id="" class="form-control" placeholder="Enter email">
+                <label>Insulin</label>
+                <input type="number" id="" class="form-control" placeholder="Insulin">
             </div>
             <div class="form-group">
-                <label>Password</label>
-                <input type="text" class="form-control" id="" placeholder="">
+                <label>BMI</label>
+                <input type="number" class="form-control" id="" placeholder="BMI">
             </div>
             <div class="form-group">
-                <label>Email address</label>
-                <input type="text" id="" class="form-control" placeholder="Enter email">
-            </div>
-            <div class="form-group">
-                <label>Password</label>
-                <input type="text" class="form-control" id="" placeholder="">
-            </div>
-            <div class="form-group">
-                <label>Email address</label>
-                <input type="text" id="" class="form-control" placeholder="Enter email">
-            </div>
-            <div class="form-group">
-                <label>Password</label>
-                <input type="text" class="form-control" id="" placeholder="">
+                <label>Age</label>
+                <input type="number" class="form-control" id="" placeholder="Age">
             </div>
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
