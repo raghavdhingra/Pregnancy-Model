@@ -13,36 +13,36 @@
 {% block content %}
 <div class="container">
     <div style="height: 2em;"></div>
-    <form method="POST" action="{% url 'pregnancyApi' %}">
+    <form method="POST" action="{% url 'home' %}">
         {% csrf_token %}
         <div class="main-grid">
             <div class="form-group">
                 <label>Number of Pregnancy</label>
-                <input type="number" id="" class="form-control" placeholder="Number of Pregnancy">
+                <input type="number" name="preg_num" class="form-control" placeholder="Number of Pregnancy">
             </div>
             <div class="form-group">
                 <label>Glucose Concentration</label>
-                <input type="number" class="form-control" id="" placeholder="Your Glucose Concentration">
+                <input type="number" class="form-control" name="glu_con" placeholder="Your Glucose Concentration">
             </div>
             <div class="form-group">
                 <label>Diastolic Blood Pressure</label>
-                <input type="number" id="" class="form-control" placeholder="Blood Pressure">
+                <input type="number" name="blood_pre" class="form-control" placeholder="Blood Pressure">
             </div>
             <div class="form-group">
                 <label>Thickness of Triceps</label>
-                <input type="number" class="form-control" id="" placeholder="Thickness">
+                <input type="number" class="form-control" name="thickness" placeholder="Thickness">
             </div>
             <div class="form-group">
                 <label>Insulin</label>
-                <input type="number" id="" class="form-control" placeholder="Insulin">
+                <input type="number" name="insulin" class="form-control" placeholder="Insulin">
             </div>
             <div class="form-group">
                 <label>BMI</label>
-                <input type="number" class="form-control" id="" placeholder="BMI">
+                <input type="number" class="form-control" name="bmi" placeholder="BMI">
             </div>
             <div class="form-group">
                 <label>Age</label>
-                <input type="number" class="form-control" id="" placeholder="Age">
+                <input type="number" class="form-control" name="age" placeholder="Age">
             </div>
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
