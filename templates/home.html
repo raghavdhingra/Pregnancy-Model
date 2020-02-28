@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{% block header %}
+<style>
+    .main-grid{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 2em;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <form method="POST" action="{% url 'pregnancyApi' %}">
+        <div class="main-grid">
+            <div class="form-group">
+                <label>Email address</label>
+                <input type="text" id="" class="form-control" placeholder="">
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input type="text" class="form-control" id="" placeholder="">
+            </div>
+            <div class="form-group">
+                <label>Email address</label>
+                <input type="text" id="" class="form-control" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input type="text" class="form-control" id="" placeholder="">
+            </div>
+            <div class="form-group">
+                <label>Email address</label>
+                <input type="text" id="" class="form-control" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input type="text" class="form-control" id="" placeholder="">
+            </div>
+            <div class="form-group">
+                <label>Email address</label>
+                <input type="text" id="" class="form-control" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input type="text" class="form-control" id="" placeholder="">
+            </div>
+            <div class="form-group">
+                <label>Email address</label>
+                <input type="text" id="" class="form-control" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input type="text" class="form-control" id="" placeholder="">
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+{% endblock %}
+
+{% block scripts %}
+{% endblock %}
